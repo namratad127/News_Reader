@@ -1,73 +1,14 @@
-/* 
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-
-
-body{
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    display: flex;
-    flex-direction: column;
-  
+body {
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-
-
-.container {
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
-
-.card {
-  float: right;
-}
-
-
-.col-md-4{
-    padding:15px;
-    display: -webkit-inline-box;
-}
-
-.profile_photo{
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-}
-.card-title{
-    color: #195A94;
-}
-.profile-text{
-    display: inline;
-}
-
-.btn-read{
-    background-color:#195A94;
-    color: #fff;
-    border:none; 
-    border-radius:10px; 
-    padding:10px;
-    float: right;
-}
- */
-
-
-
- body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .section{
-    max-width: 1000px;
+.section {
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -75,105 +16,95 @@ body{
   padding-bottom: 1.5em;
 }
 
-  .container {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
-  
-  .card {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 20px;
-    width: 30%;
-    margin: 10px;
-    margin-top: 60px;
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  flex-wrap: wrap;
+}
 
-  }
-  
- .head{
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+  width: 30%;
+  margin: 10px;
+  margin-top: 60px;
+}
+
+.title{
   margin: 0;
-   color: #195A94;
-   font-weight:bold;
-   font-size: 30px;
-   position: absolute;
-   width: 66%;
+  color: #195A94;
+  font-weight: bold;
+  font-size: 30px;
+}
 
-  }
-  
-  .card-header .date {
-    font-size: 14px;
-    
-  }
-  
-  .card-body {
-    line-height: 1.6;
-    padding: 0px;
-  }
-  
-  .card-body p {
-    margin-bottom: 10px;
-  }
-  
-  .card-body a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-  }
-  
+.date {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.card-body {
+  line-height: 1.6;
+  padding: 0px;
+}
+
+.card-body a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
 .card-footer .author {
-    display: flex;
-    align-items: center;
-  }
-  
-  .card-footer .author img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .card-footer .author span {
-    font-weight: bold;
-  }
-   
-  .card-footer .btn {
-    background-color: #195A94
-    ;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  
-  .image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .comments {
-    display: flex;
-    align-items: center;
-  }
-  
-  .comments i {
-    font-size: 14px;
-    margin-right: 5px;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.card-footer .author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
 
- 
+.card-footer .author span {
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.card-footer .btn {
+  background-color: #195A94;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+}
+
+.comments i {
+  font-size: 14px;
+  margin-right: 5px;
+}
