@@ -9,7 +9,7 @@ export class NewsReadingService {
 
   constructor(public httpClient:HttpClient) { }
   
-  API_URL = "https://newsapi.org/v2/everything?q=tesla&from=2024-05-20&sortBy=publishedAt&apiKey=1aa1e26a1c284cfa96a28a1b3147d912";
+  API_URL = "https://newsapi.org/v2/everything?q=tesla&from=2024-05-21&sortBy=publishedAt&apiKey=900feb0b813a4d00b5f04df1b10ea82d";
 
   getNewsList(): Observable<any[]> {
     return this.httpClient.get<any[]>(this.API_URL)
