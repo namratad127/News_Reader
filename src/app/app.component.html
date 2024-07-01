@@ -13,7 +13,7 @@
   <div class="container">
     <app-header></app-header>
     <div *ngFor="let article of newsFeed" class="card">
-      <img [src]="article.urlToImage" class="image">
+      <img [src]="article.image" class="image">
       <div class="date">{{ article.publishedAt | date: 'd MMM, y'}}</div>
       <div class="title">
         <h5>{{ article.title }}</h5>
