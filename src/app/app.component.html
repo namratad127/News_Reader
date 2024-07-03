@@ -21,7 +21,7 @@
         <p class="card-body">{{ article.description }}</p>
       <div class="card-footer">
         <div class="author">
-          <img [src]="article.source.url" class="image">
+          <!-- <img [src]="article.source.url" class="image"> -->
           <span class="text">{{ article.source.name }}</span>
         </div>
         <button class="btn" (click)="openArticle(article.url)">Read More</button>
